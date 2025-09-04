@@ -9,7 +9,8 @@
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=jpdillingham_Soulseek.NET&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=jpdillingham_Soulseek.NET)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=jpdillingham_Soulseek.NET&metric=security_rating)](https://sonarcloud.io/dashboard?id=jpdillingham_Soulseek.NET)
 
-A .NET Standard client library for the Soulseek network.
+Una console in C# per modificare i dati del database di Jellyfin modificando i campi "ForcedSortName" e "SortName" della tabella "TypedBaseItems".
+Questa utility è molto utile per ordinare in maniera corretta la libreria dei fumetti di Jellyfin
 
 # Quick Start
 
