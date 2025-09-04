@@ -24,7 +24,8 @@ public class Program
         }
 
         //Check arguments
-        CheckArguments(args);
+        if (!CheckArguments(args))
+            return;
 
         //Check number type
         numberType = CheckNumberType(args[4]);
@@ -74,22 +75,23 @@ public class Program
     /// CheckArguments
     /// </summary>
     /// <param name="args"></param>
-    public static void CheckArguments(string[] args)
+    public static bool CheckArguments(string[] args)
     {
         Console.WriteLine("Check arguments");
 
         if (args.Length == 1 && args[0] == "-h")
         {
             ShowHelp();
-            return;
+            return false;
         }
 
         if (!IsInRange(args.Length, 4, 5))
         {
             Console.WriteLine("Please provide command and all parameters");
-            return;
+            return false;
         }
         Console.WriteLine("Check arguments : OK");
+        return true;
     }
 
     /// <summary>
@@ -125,8 +127,8 @@ public class Program
         Console.WriteLine("Command : ");
         Console.WriteLine(" -h : Show this help ");
         Console.WriteLine(" -s : Set sort title in Jellyfin database");
-
-        Console.WriteLine("Example: JellyfinSetSortTitle C:\\Jellyfin\\Media");
+        Console.WriteLine();
+        Console.WriteLine("Example: JellyfinSetSortTitle -s /var/lib/jellyfin/data/library.db /media/comic/Spiderman Spiderman 001");
     }
 
     /// <summary>
