@@ -22,7 +22,7 @@ dotnet JellyfinSetSortTitle -s /var/lib/jellyfin/data/library.db /media/comic/Sp
 # Requirements
 The Jellyfin instance must be shut down before running the command.
 The files must already be added to the Jellyfin library.
-The files must contain the prefix specified in the "<Comics prefix ForcedSortName>" parameter and the number specified in the "<Start number>" parameter in their names.
+The files must contain the prefix specified in the "Comics prefix ForcedSortName" parameter and the number specified in the "Start number" parameter in their names.
 E.g., Spiderman 001.cbr
 
 ## Stop Jellyfin service (Example)
