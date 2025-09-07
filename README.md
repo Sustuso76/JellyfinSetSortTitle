@@ -6,7 +6,7 @@ This utility is very useful for correctly sorting the Jellyfin comic book librar
 
 #Install 
 ```c#
-https://github.com/Sustuso76/JellyfinSetSortTitle.git
+git clone https://github.com/Sustuso76/JellyfinSetSortTitle.git
 ```
 Build and Publish for your target (Windows, Linux ....)
 
